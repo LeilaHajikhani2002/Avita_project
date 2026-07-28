@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>گروه نرم افزاری اویتا</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <link rel="stylesheet" href="css/brands.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+
+</head>
+<body>
+
+    <main>
+        <div id="container">
+            <header id="main-header">
+                <a href="index.html" id="logo-wrapper">
+                    <img src="images/logo_avita.png" alt="گروه نرم افزاری اویتا">
+                </a>
+                <nav id="top-navigation">
+                    <ul>
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                        <li><a href="#">نمونه کارها</a></li>
+                        <li><a href="#">مشتریان</a></li>
+                        <li><a href="#">قیمت ها</a></li>
+
+                    </ul>
+
+                    <a href="#" id="menu-toggle" class="menu-button">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <a href="#" id="open-close-menu" onclick="showMenu()">
+                        <i class="fa-solid fa-times fa-bars"></i>
+                    </a>
+
+                </nav>
+
+                <div id="fullscreen-menu">
+                    <div id="wrapper">
+                        <div id="title">
+                            <a href="" id="logo-wrap">
+                                <img src="images/logo_avita.png" alt="گروه نرم افزاری اویتا">
+                            </a>
+                        </div>
+                        <div id="logo">
+                            <a href="#" id="close-toggle">
+                                <i class="fa-solid fa-close"></i></a>
+                        </div>
+                    </div>
+
+                    <div id="columns_wrap">
+
+                        <div id="columns">
+                            <div id="column-right">
+                                <ul class="list">
+                                    <li>
+                                        <i class="fa-solid fa-angle-left"></i>
+                                        <a href="#">صفحه اصلی</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-left"></i>
+                                        <a href="#">تماس با ما</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-left"></i>
+                                        <a href="#">مشتریان</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div id="column-left">
+                                <ul class="list">
+                                    <li>
+                                        <i class="fa-solid fa-angle-left"></i>
+                                        <a href="#">درباره ما</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-left"></i>
+                                        <a href="#">نمونه کارها</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-angle-left"></i>
+                                        <a href="#">قیمت ها</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <section id="home">
+                <h2>ما خیلی خلاقیم!</h2>
+                <h1>شرکت تجارت الکترونیک
+                    <span>اَویتا</span></h1>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+
+                <form id="search-form" method="post">
+                    <input type="text" placeholder="دنبال چه خدماتی هستید؟" id="search-bar" name="search-bar">
+
+                    <input type="submit" id="s_btn" value="جستجو" class="bg-purple-button">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <section id="slideshow">
+    <ul class="bxslider">
+        <li><img src="images/slide1.jpg"></li>
+        <li><img src="images/slide2.jpg"></li>
+        <li><img src="images/slide3.jpg"></li>
+        <li><img src="images/slide4.jpg"></li>
+    </ul>
+
+    <div id="btn-wrapper">
+            <span id="prevSlide">
+            </span>
+        <span id="nextSlide">
+            </span>
+    </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">خدمات ما</h2>
+            <h4 class="section-sub-title">لیستی ازآخرین خدمات را مشاهده می کنید.
+            </h4>
+
+                <div id="service_wrapper">
+                    <article class="service" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-tree"></i>
+                        </div>
+                        <h3>طراحی خلاقانه</h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</p>
+
+                        <div class="details">
+                            <i class="fa-solid fa-arrow-right right-arrow"></i>
+                            <b>جزئیات بیشتر</b>
+                        </div>
+
+                    </article>
+
+                    <article class="service" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="1000">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-bahai"></i>
+                        </div>
+                        <h3>برند سازی</h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</p>
+
+                        <div class="details">
+                            <i class="fa-solid fa-arrow-right right-arrow"></i>
+                            <b>جزئیات بیشتر</b>
+                        </div>
+
+                    </article>
+
+                    <article class="service" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="1500">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <h3>طراحی وب سایت</h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</p>
+
+                        <div class="details">
+                            <i class="fa-solid fa-arrow-right right-arrow"></i>
+                            <b>جزئیات بیشتر</b>
+                        </div>
+
+                    </article>
+                    <article class="service" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="2000">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-earth"></i>
+                        </div>
+                        <h3>بهینه سازی سئو</h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است</p>
+
+                        <div class="details">
+                            <i class="fa-solid fa-arrow-right right-arrow"></i>
+                            <b>جزئیات بیشتر</b>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+    </section>
+
+    <section id="numerals">
+          <div class="overlay">
+              <div class="container">
+                  <div id="items-wrapper">
+                      <article class="item">
+                          <i class="fa-solid fa-heart"></i>
+                          <span class="count">3569</span>
+                          <span>مشتریان راضی</span>
+
+                      </article>
+                      <article class="item">
+                          <i class="fa-solid fa-project-diagram"></i>
+                          <span class="count">564</span>
+                          <span>پروژه انجام شده</span>
+
+                      </article>
+                      <article class="item">
+                          <i class="fa-solid fa-download"></i>
+                          <span class="count">256</span>
+                          <span>دریافت فایل</span>
+
+                      </article>
+                      <article class="item">
+                          <i class="fa-solid fa-code"></i>
+                          <span class="count">8543</span>
+                          <span> خط کد</span>
+
+                      </article>
+
+                  </div>
+              </div>
+          </div>
+    </section>
+
+    <section id="comments">
+            <div class="container">
+                <h2 class="section-title">نظرات مشتریان</h2>
+                <h4 class="section-sub-title">نظرات مشتریان قبلی ما را مشاهده می کنید.
+                </h4>
+
+                <div class="comment-wrapper">
+                    <div class="card">
+                        <div class="top">
+                            <div class="right">
+                                <img src="images/customer_1.jpg" alt=""
+                                     class="avatar" id="user_image">
+
+                                <div class="info">
+                                    <h3 id="user_name">ایمان محمدی</h3>
+                                    <span id="user_job">مدیرعامل مپنا</span>
+
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="left">
+                                <img src="images/quote.svg" alt=""
+                                     class="icon">
+                            </div>
+                        </div>
+                        <p class="description" id="user_comment">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،و با استفاده از طراحان گرافیک است،چاپگرها و متون بلکه روزنامه و مجله در ستون وسطر آنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز ، و کاربردهای متنوع با</p>
+                    </div>
+
+
+                </div>
+
+                <div id="button_wrapper">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+            </div>
+
+
+    </section>
+
+    <section id="samples">
+        <div class="container">
+            <h2 class="section-title">نمونه کارها</h2>
+            <h4 class="section-sub-title">آخرین نمونه کارهای خلاقانه مارا بررسی کنید.
+            </h4>
+
+            <ul id="filters">
+                <li><a href="#" class="all active">همه</a></li>
+                <li><a href="#" class="site">سایت</a></li>
+                <li><a href="#" class="app">اپلیکیشن</a></li>
+                <li><a href="#" class="design">طراحی</a></li>
+                <li><a href="#" class="graphic">گرافیک</a></li>
+                <li><a href="#" class="codification">تدوین</a></li>
+            </ul>
+
+            <div id="samples-wrapper">
+                <article class="sample site">
+                    <img src="images/port_1.jpg" alt="">
+                        <div class="top-info">
+                            <div class="vertical-line"></div>
+                            <span class="hover-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</span>
+                        </div>
+                        <div class="bottom-info-right">نمونه کار شماره 1</div>
+                </article>
+
+                <article class="sample site">
+                    <img src="images/port_2.jpg" alt="">
+
+                        <div class="top-info">
+                            <div class="vertical-line"></div>
+                            <span class="hover-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</span>
+                        </div>
+                    <div class="bottom-info-right">نمونه کار شماره 2</div>
+                </article>
+
+                <article class="sample codification">
+                    <img src="images/port_3.jpg" alt="">
+                        <div class="top-info">
+                            <div class="vertical-line"></div>
+                            <span class="hover-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</span>
+                        </div>
+
+                    <div class="bottom-info-right">نمونه کار شماره 3</div>
+                </article>
+
+                <article class="sample app">
+                    <img src="images/port_4.jpg" alt="">
+
+                        <div class="top-info">
+                            <div class="vertical-line"></div>
+                            <span class="hover-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</span>
+                        </div>
+
+                    <div class="bottom-info-right">نمونه کار شماره 4</div>
+                </article>
+
+                <article class="sample app">
+                    <img src="images/port_5.jpg" alt="">
+
+                        <div class="top-info">
+                            <div class="vertical-line"></div>
+                            <span class="hover-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</span>
+                        </div>
+
+                    <div class="bottom-info-right">نمونه کار شماره 5</div>
+                </article>
+
+                <article class="sample graphic">
+                    <img src="images/port_6.jpg" alt="">
+
+                        <div class="top-info">
+                            <div class="vertical-line"></div>
+                            <span class="hover-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</span>
+                        </div>
+
+                    <div class="bottom-info-right">نمونه کار شماره 6</div>
+                </article>
+
+                <article class="sample">
+                    <img src="images/port_7.jpg" alt="">
+
+                        <div class="top-info">
+                            <div class="vertical-line"></div>
+                            <span class="hover-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</span>
+                        </div>
+
+                    <div class="bottom-info-right">نمونه کار شماره 7</div>
+                </article>
+
+                <article class="sample design">
+                    <img src="images/port_8.jpg" alt="">
+
+                        <div class="top-info">
+                            <div class="vertical-line"></div>
+                            <span class="hover-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</span>
+                        </div>
+                    <div class="bottom-info-right">نمونه کار شماره 8</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="teams">
+        <div class="container">
+            <h2 class="section-title">تیم ما</h2>
+            <h4 class="section-sub-title">با اعضای گروه نرم افزاری اویتا بیشتر آشنا شوید.
+            </h4>
+
+            <div id="team_wrapper">
+                <article class="team" >
+                    <img src="images/team_1.png" alt="">
+                    <div class="info-team">
+                        <h3>احمد بادپی</h3>
+                        <h4>مدیر پروژه</h4>
+
+                    </div>
+
+                    <ul class="social-links">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="team">
+                    <img src="images/team_2.png" alt="">
+                    <div class="info-team">
+                        <h3>مرتضی قربانعلی زاده</h3>
+                        <h4>توسعه دهنده رابط کاربری</h4>
+
+                    </div>
+
+                    <ul class="social-links">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="team">
+                    <img src="images/team_3.png" alt="">
+                    <div class="info-team">
+                        <h3>محمد میرعلی</h3>
+                        <h4>توسعه دهنده React Native </h4>
+
+                    </div>
+
+                    <ul class="social-links">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="team">
+                    <img src="images/team_4.jpg" alt="">
+                    <div class="info-team">
+                        <h3>محمدرضا چاوشی پور</h3>
+                        <h4>برنامه نویس ارشد python</h4>
+
+                    </div>
+
+                    <ul class="social-links">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="team" >
+                    <img src="images/team_5.jpg" alt="">
+                    <div class="info-team">
+                        <h3>رضا احمدی</h3>
+                        <h4>متخصص دیتابیس</h4>
+
+                    </div>
+
+                    <ul class="social-links">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+        <section id="faq">
+            <div id="overlay-faq">
+            <div class="container">
+                <div id="row">
+                    <h2 class="section-title">پرسش های متداول</h2>
+                    <h4 class="section-sub-title">    آخرین پرسش ها را اینجا می تواند ببینید.
+                    </h4>
+
+                    <div id="faqAccordion">
+                        <div class="acc-title">
+                            آیا دوره ها پروژه محور هستند ؟
+                            <i class="fa-solid fa-angle-down fa-angle-up"></i>
+                        </div>
+                        <div class="acc-body">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و .
+                        </div>
+                        <div class="acc-title">
+                            زمان بندی کلاس ها به چه صورت انجام می شود؟
+                            <i class="fa-solid fa-angle-down fa-angle-up"></i>
+                        </div>
+                        <div class="acc-body">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و .
+                        </div>
+                        <div class="acc-title">
+                            آیا امکان معرفی به بازار کار پس از دوره وجود دارد ؟
+                            <i class="fa-solid fa-angle-down fa-angle-up"></i>
+                        </div>
+                        <div class="acc-body">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و .
+                        </div>
+                        <div class="acc-title">
+                            آیا پس از پایان دوره می توانم مدرک بگیرم ؟
+                            <i class="fa-solid fa-angle-down fa-angle-up"></i>
+                        </div>
+                        <div class="acc-body">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و .
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+    <section id="communications">
+        <div class="container">
+            <h2 class="section-title">در تماس باشید!</h2>
+            <h4 class="section-sub-title">ما خوشحال خوهیم شد که از شما بشنویم.
+            </h4>
+
+            <div id="communication-wrapper">
+                <div class="communicate">
+                    <i class="fa-solid fa-phone"></i>
+                    <h4>شماره تماس</h4>
+                    <h5>09139616246</h5>
+                    <h5>03155464723</h5>
+                </div>
+
+                <div class="communicate">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>ایمیل</h4>
+                    <h5>avitagroup@gmail.com</h5>
+                    <h5>info@avitagroup.com</h5>
+                </div>
+
+                <div class="communicate">
+                    <i class="fa-solid fa-location-pin"></i>
+                    <h4>آدرس</h4>
+                    <h5>کاشان خیابان آیت الله کاشانی</h5>
+                    <h5> مجتمع سجاد طبقه اول واحد 12</h5>
+                </div>
+
+            </div>
+
+
+            <div id="forms-wrapper">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div id="parent">
+                        <div id="right">
+
+                            <input type="text" name="first_name" id="first_name" placeholder="نام خود را وارد نمایید" class="form-control" maxlength="15" minlength="3" required>
+
+                            <input type="text" name="phone" id="phone" placeholder="شماره تماس خود را وارد نمایید" class="form-control" maxlength="11" required>
+                        </div>
+                        <div id="left">
+                            <input type="email" name="useremail" placeholder="آدرس ایمیل خود را وارد نمایید" id="useremail" class="form-control" dir="rtl" required>
+                            <input type="text" name="subject" id="subject" placeholder="موضوع" class="form-control">
+                        </div>
+
+                        <textarea id="user_message" name="user-message" class="form-control" rows="10" cols="50" placeholder="پیام خود را اینجا وارد کنید"></textarea>
+
+                        <button type="submit" id="my_btn">
+                            <i class="fa-brands fa-telegram"></i>
+                            ارسال پیام
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="gradient-overlay">
+        <footer id="main_footer">
+            <div class="container">
+                <div id="columns_wrapper">
+                    <div class="column">
+                        <img src="images/logo_avita_white.png" alt="گروه نرم افزاری آویتا">
+                        <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،و با استفاده از طراحان گرافیک است</h5>
+
+                        <ul id="links-social">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h3>دسترسی سریع</h3>
+                        <div class="divider">
+                            <div class="div-right"></div>
+                            <div class="div-left"></div>
+                        </div>
+                        <ul class="normal-list">
+                            <li>
+                                <i class="fa-solid fa-angle-left"></i>
+                                <a href="#">صفحه نخست</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angle-left"></i>
+                                <a href="#">فرصت های شغلی</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angle-left"></i>
+                                <a href="#">پرسش های متداول</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angle-left"></i>
+                                <a href="#">رویه های بازگرداندن کالا</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-angle-left"></i>
+                                <a href="#">شرایط استفاده</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h3>دانلود اپلیکیشن</h3>
+                        <div class="divider">
+                            <div class="div-right"></div>
+                            <div class="div-left"></div>
+                        </div>
+                        <ul class="effect-image">
+                            <li>
+                                <a href="#">
+                                    <img src="images/play-store.png" alt="play-store"></a>
+                            </li>
+                            <li>
+                                <a href="#"> <img src="images/app-store.png" alt="app-store"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/bazar.png" alt="bazar"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h3>برچسب ها</h3>
+                        <div class="divider">
+                            <div class="div-right"></div>
+                            <div class="div-left"></div>
+                        </div>
+
+                        <ul class="vertical-list">
+                            <li>
+                                <a href="#">
+                                    گالری
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    دانلود
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    آموزش
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    برنامه نویسی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    فرانت اند
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    بک اند
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    آکادمی
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    سئو سایت
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    گوگل آنالیتیکز
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    طراحی سایت
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <section id="copyright">
+        <div class="container">
+            <div id="copy">
+                <p>
+                    تمامی حقوق محفوظ و متعلق به وبسایت Avita می باشد.
+                    © CopyRight 2026
+                </p>
+            </div>
+            <div id="developer">
+                <p>
+                    طراحی شده
+                    توسط احمد بادپی با
+                    <i class="fa-solid fa-leaf green"></i>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery.bxslider.min.js"></script>
+    <script src="scripts/aos.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

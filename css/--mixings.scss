@@ -1,0 +1,17 @@
+@mixin centering{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin position {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin lists{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}

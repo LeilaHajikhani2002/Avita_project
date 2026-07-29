@@ -34,7 +34,7 @@ This is a frontend template project built using HTML, SCSS, JavaScript, and mult
 - js/ or Scripts/ → JavaScript files  
 - html/ → HTML pages  
 - images/ → image assets  
-- node_modules/ → installed dependencies (NOT uploaded to GitHub)
+- node_modules/ → installed dependencies
 
 ---
 

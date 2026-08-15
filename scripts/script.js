@@ -26,12 +26,6 @@ let customers = [
 ];
 
 
-function showMenu(){
-    document.querySelector('#top-navigation ul').classList.toggle('show')
-
-    document.querySelector('#open-close-menu i').classList.toggle('fa-bars')
-}
-
 const menuToggle = document.getElementById('menu-toggle')
 const closeToggle=document.getElementById('close-toggle')
 const fullscreenMenu=document.getElementById('fullscreen-menu')
@@ -141,12 +135,21 @@ $(function (){
         autoplaySpeed: 1500,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 1200,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToShow: 3,
+                    slidesToScroll: 1
                 }
             },
+
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+
             {
                 breakpoint: 576,
                 settings: {

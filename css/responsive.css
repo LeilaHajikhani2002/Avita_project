@@ -25,42 +25,51 @@
   }
 }
 @media screen and (max-width: 768px) {
-  a#open-close-menu:link,
-  a#open-close-menu:visited {
-    display: block;
-  }
   #top-navigation ul {
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    right: -100%;
-    top: 0;
-    z-index: 5;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    background-color: #cb79e1;
-    transition: all 0.5s;
+    display: none;
   }
-  #top-navigation ul.show {
-    right: 0;
+  .menu-button {
+    display: block;
   }
   #top-navigation ul li {
     display: block;
     margin: 0;
   }
+  #fullscreen-menu {
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+  }
+  #fullscreen-menu.active {
+    transform: translateX(0);
+  }
+  #columns_wrap {
+    width: 90%;
+    margin: 30px auto;
+  }
+  #columns {
+    gap: 15px;
+  }
+  #column-left, #column-right {
+    width: 50%;
+    flex-basis: 50%;
+    padding: 0;
+  }
+  .list li {
+    padding: 13px;
+  }
+  .list li a {
+    font-size: 14px;
+  }
   #top-navigation ul li a:link,
   #top-navigation ul li a:visited {
     color: #ffffff;
-    display: #000000;
+    display: block;
     padding: 20px;
     border-bottom: 1px solid transparent;
   }
   #top-navigation ul li a:hover {
     border-bottom: 1px solid rgba(119, 87, 183, 0.78);
-  }
-  .menu-button {
-    display: none;
   }
   #search-form {
     width: 80%;
@@ -139,8 +148,60 @@
   #developer p {
     margin-bottom: 10px;
   }
+  #faq {
+    padding: 50px 0;
+    background-attachment: scroll;
+  }
+  #faq #row .section-title {
+    margin-bottom: 10px;
+  }
+  #faq #row .section-sub-title {
+    margin-bottom: 25px;
+  }
+  #faq #faqAccordion {
+    gap: 6px;
+  }
+  #faq #faqAccordion .acc-title {
+    padding: 13px 12px;
+    font-size: 14px;
+  }
+  #faq #faqAccordion .acc-body {
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 2;
+  }
 }
 @media screen and (max-width: 576px) {
+  .menu-button {
+    font-size: 22px;
+  }
+  #fullscreen-menu #wrapper {
+    min-height: 80px;
+    padding: 0 15px;
+  }
+  #logo a {
+    font-size: 22px;
+  }
+  #columns_wrap {
+    width: 90%;
+    margin: 20px auto;
+  }
+  #columns {
+    flex-direction: column;
+    gap: 0;
+  }
+  #column-left, #column-right {
+    width: 100%;
+    flex-basis: auto;
+    padding: 0;
+  }
+  .list li {
+    margin: 8px 0;
+    padding: 12px;
+  }
+  .list li a {
+    font-size: 13px;
+  }
   #numerals {
     min-height: 1000px;
   }
@@ -179,8 +240,23 @@
     text-align: center;
     align-items: center;
   }
-  .team::after {
-    height: 17%;
+  #faq {
+    min-height: 0;
+    height: auto;
+    padding: 50px 0;
+    background-attachment: scroll;
+  }
+  #overlay-faq {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+  }
+  #row {
+    min-height: 0;
+  }
+  #faqAccordion {
+    min-height: 0;
+    height: auto;
   }
   #communication-wrapper {
     flex-direction: column;
@@ -206,6 +282,50 @@
   #developer p, #copy p {
     font-size: 11px;
     font-weight: bold;
+  }
+  #faq {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 40px 0;
+    background-attachment: scroll;
+    background-position: center;
+  }
+  #faq #row {
+    min-height: 0;
+  }
+  #faq #row .section-title {
+    font-size: 23px;
+    margin: 0 0 8px;
+  }
+  #faq #row .section-sub-title {
+    font-size: 12px;
+    line-height: 2;
+    margin: 0 0 20px;
+  }
+  #faq #faqAccordion {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    gap: 5px;
+  }
+  #faq #faqAccordion .acc-title {
+    width: 100%;
+    padding: 11px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 7px;
+  }
+  #faq #faqAccordion .acc-title .fa-solid {
+    font-size: 11px;
+    margin-right: 5px;
+  }
+  #faq #faqAccordion .acc-body {
+    width: 100%;
+    padding: 10px;
+    font-size: 11px;
+    line-height: 2;
+    margin: 0;
   }
 }
 

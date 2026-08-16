@@ -1,6 +1,6 @@
 # Avita-Project-info
 Live Demo:
-https://avita-project.leilahajikhani2002.workers.dev/
+https://leilahajikhani2002.github.io/Avita_project/
 
 🌐 Frontend Project
 

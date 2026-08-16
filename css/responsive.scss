@@ -4,8 +4,18 @@ $whiteColor: #ffffff;
 $blackColor: #000000;
 
 @media (max-width: 992px) {
+
   #top-navigation {
     column-gap: 10px;
+  }
+
+  #top-navigation{
+    ul{
+      display: none;
+    }
+  }
+  .menu-button{
+    display: block;
   }
 
   #top-navigation li {
@@ -40,15 +50,14 @@ $blackColor: #000000;
 }
 @media screen and (max-width: 768px) {
 
-  #top-navigation {
-    ul {
+  #top-navigation{
+    ul{
       display: none;
     }
   }
   .menu-button{
     display: block;
   }
-
   #top-navigation ul li {
     display: block;
     margin: 0;

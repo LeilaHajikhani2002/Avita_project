@@ -2,6 +2,12 @@
   #top-navigation {
     column-gap: 10px;
   }
+  #top-navigation ul {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
   #top-navigation li {
     margin: 0 10px;
   }

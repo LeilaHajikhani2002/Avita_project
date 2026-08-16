@@ -5,10 +5,6 @@ $blackColor: #000000;
 
 @media (max-width: 992px) {
 
-  #top-navigation {
-    column-gap: 10px;
-  }
-
   #top-navigation{
     ul{
       display: none;
@@ -17,6 +13,33 @@ $blackColor: #000000;
   .menu-button{
     display: block;
   }
+  #top-navigation ul li {
+    display: block;
+    margin: 0;
+  }
+
+  #fullscreen-menu{
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    &.active{
+      transform: translateX(0);
+    }
+  }
+
+  #top-navigation {
+    column-gap: 10px;
+  }
+
+  //#top-navigation{
+  //  ul{
+  //    display: none;
+  //  }
+  //}
+  //.menu-button{
+  //  display: block;
+  //}
 
   #top-navigation li {
     margin: 0 10px;
@@ -50,28 +73,7 @@ $blackColor: #000000;
 }
 @media screen and (max-width: 768px) {
 
-  #top-navigation{
-    ul{
-      display: none;
-    }
-  }
-  .menu-button{
-    display: block;
-  }
-  #top-navigation ul li {
-    display: block;
-    margin: 0;
-  }
 
-  #fullscreen-menu{
-    width: 100%;
-    height: 100vh;
-    transform: translateX(100%);
-
-    &.active{
-      transform: translateX(0);
-    }
-  }
 
   #columns_wrap{
     width: 90%;

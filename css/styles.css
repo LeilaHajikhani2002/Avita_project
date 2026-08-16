@@ -767,6 +767,7 @@ ul#filters li a:hover, ul#filters li a.active {
 
 #team_wrapper {
   min-height: 200px;
+  padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: center;
